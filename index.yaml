@@ -1,0 +1,54 @@
+apiVersion: v1
+entries:
+  mastodon:
+  - annotations:
+      category: CMS
+    apiVersion: v2
+    appVersion: 4.0.2
+    created: "2022-12-21T17:01:03.29867219Z"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 17.x.x
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.x.x
+    - condition: elasticsearch.enabled
+      name: elasticsearch
+      repository: https://charts.bitnami.com/bitnami
+      version: 19.x.x
+    - condition: minio.enabled
+      name: minio
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.x.x
+    - condition: apache.enabled
+      name: apache
+      repository: https://charts.bitnami.com/bitnami
+      version: 9.x.x
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Mastodon is self-hosted social network server based on ActivityPub.
+      Written in Ruby, features real-time updates, multimedia attachments and no vendor
+      lock-in.
+    digest: 8e7635e6015527a4ea564ccdd087a9bc356b3a678caa4dfd539902d301ef08e7
+    home: https://joinmastodon.org/
+    icon: https://bitnami.com/assets/stacks/mastodon/img/mastodon-stack-220x234.png
+    keywords:
+    - development
+    - dashboards
+    maintainers:
+    - name: Bitnami
+      url: https://github.com/bitnami/charts
+    name: mastodon
+    sources:
+    - https://github.com/bitnami/containers/tree/main/bitnami/mastodon
+    - https://github.com/mastodon/mastodon/
+    urls:
+    - https://github.com/mtiutiu-heits/helm-charts/releases/download/mastodon-0.1.1/mastodon-0.1.1.tgz
+    version: 0.1.1
+generated: "2022-12-21T17:01:03.29868279Z"
